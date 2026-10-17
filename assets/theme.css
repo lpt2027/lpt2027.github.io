@@ -1,0 +1,95 @@
+/* LPT workshop 2027 colour scheme ("Navy and ember"), loaded after minima's main.css */
+:root {
+  --navy: #0f2240;
+  --navy-hover: #1b3560;
+  --ember: #d9622b;
+  --ember-light: #ffb066;
+  --ink: #1d2b40;
+  --muted-on-navy: #c3cfe0;
+}
+
+body {
+  color: var(--ink);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--navy);
+}
+
+a, a:visited {
+  color: var(--ember);
+}
+
+a:hover {
+  color: var(--navy);
+}
+
+/* Header: banner on top, navy navigation bar below */
+.site-header {
+  background-color: var(--navy);
+  border-top: none;
+  border-bottom: 3px solid var(--ember);
+}
+
+.site-header .site-title,
+.site-header .site-title:visited {
+  color: #ffffff;
+}
+
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: var(--ember-light);
+}
+
+.site-nav .page-link:hover {
+  color: #ffffff;
+}
+
+.site-nav .menu-icon > svg {
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    background-color: var(--navy);
+    border-color: var(--navy-hover);
+  }
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--navy);
+  border-top: 3px solid var(--ember);
+  color: var(--muted-on-navy);
+}
+
+.site-footer .footer-heading {
+  color: #ffffff;
+}
+
+.site-footer .footer-col-wrapper {
+  color: var(--muted-on-navy);
+}
+
+.site-footer a,
+.site-footer a:visited,
+.site-footer .page-link {
+  color: var(--ember-light);
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+}
+
+/* Back-to-top button (overrides the inline style in each layout) */
+a#backToTop,
+a#backToTop:visited {
+  background: var(--ember);
+  color: #ffffff;
+}
+
+a#backToTop:hover {
+  background: var(--navy);
+  text-decoration: none;
+}
